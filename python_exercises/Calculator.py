@@ -13,9 +13,9 @@ modulo = ["%", "mod"]
 # inputs
 input_whole = input(print("What should i calculate?: "))
 input_parts = input_whole.split()
-num_1 = input_parts[0]  # iwie erste zahl rausnehmen
-op_1 = input_parts[1]  # ersten operator iwie
-num_2 = input_parts[2]  # zweite zahl usw
+num_1 = input_parts[0]
+op_1 = input_parts[1]
+num_2 = input_parts[2]
 
 op = "no input"
 result = "no result"
@@ -40,4 +40,4 @@ if op_1 in modulo:
     op = " % "
     result = str(float(num_1) % float(num_2))
 
-print("Ergebnis: " + num_1 + op + num_2 + " = " + result)
+print("Result: " + num_1 + op + num_2 + " = " + result)
