@@ -27,7 +27,7 @@ while status:
             op_1 = input_parts[1]
             num_2 = float(input_parts[2])
         except ValueError:
-            print("can't calculate with this. try again. numbers and operators only.")
+            print("Error: can't calculate with this. try again. numbers and operators only.")
             continue
 
 
@@ -51,7 +51,7 @@ while status:
             op = " / "
             result = str(num_1 / num_2)
         except ZeroDivisionError:
-            print("Division through Zero not possible.")
+            print("Error: Division through Zero not possible.")
             continue
 
     elif op_1 in modulo:
@@ -71,7 +71,7 @@ while status:
             continue
 
     else:
-        print("Invalid operator. Calculation not possible.")
+        print("Error: Invalid operator. Calculation not possible.")
         continue
 
     print("Result: " + str(num_1) + op + str(num_2) + " = " + result)
